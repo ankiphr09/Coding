@@ -25,5 +25,3 @@ leftRotate(arr, n, k)
 
 k = 4
 leftRotate(arr, n, k) 
-
-#This code is contributed by Sachin Bisht 

@@ -134,7 +134,7 @@ def search (arr, l, h, key):
 
 # Driver program 
 arr = [4, 5, 6, 7, 8, 9, 1, 2, 3] 
-key = 10
+key = 1
 i = search(arr, 0, len(arr)-1, key) 
 if i != -1: 
 	print ("Index: %d"%i) 

@@ -15,7 +15,7 @@ def printSolution(n, board):
     for i in range(n): 
         for j in range(n):
             print(board[i][j],end =' ')
-    print()
+        print()
 
 def solveKT(n): 
 	# ''' 

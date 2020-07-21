@@ -1,0 +1,40 @@
+# Given an array A of n elements, sort the array according to the following relations :
+#  A[i] >= A[i-1]  , if i is even.
+#  A[i] <= A[i-1]  , if i is odd.
+# Print the resultant array.
+
+# Python3 code to rearrange the 
+# elements in array such that 
+# even positioned are greater 
+# than odd positioned elements 
+
+def assign(a, n): 
+	
+	# Sort the array 
+	a.sort() 
+	
+	ans = [0] * n 
+	p = 0
+	q = n - 1
+	for i in range(n): 
+		
+		# Assign even indexes with 
+		# maximum elements 
+		if (i + 1) % 2 == 0: 
+			ans[i] = a[q] 
+			q = q - 1
+		
+		# Assign odd indexes with 
+		# remaining elements 
+		else: 
+			ans[i] = a[p] 
+			p = p + 1
+			
+	# Print result 
+	for i in range(n): 
+		print(ans[i], end = " ") 
+
+# Driver Code 
+A = [ 1, 3, 2, 2, 5 ] 
+n = len(A) 
+assign(A, n) 
